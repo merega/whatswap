@@ -2,6 +2,7 @@
 import os, re
 
 dst = os.listdir("/proc")
+print("PID", "\t", "Swap", "\t", "Name")
 for l in filter(str.isdigit, dst):
     with open("/proc/"+l+"/status") as f:
         f = f.read()
@@ -12,4 +13,4 @@ for l in filter(str.isdigit, dst):
             n = re.split(':', n.group(0))
             s = s[1].lstrip()
             if s != '0 kB':
-                print(l, '\t', s, '\t', n[1])
+                print(l, '\t', s, n[1])
