@@ -1,5 +1,5 @@
 # whatswap
-View whar swap use
+View what swap use
 
 Usage:
 python3 whatswap.py
