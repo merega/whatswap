@@ -1,5 +1,5 @@
 # whatswap
-View what swap use in Linux system (it doesn't work in macos and BSD)
+View what use swap in Linux system (it doesn't work in macos and BSD)
 
 Usage: python whatswap.py -[h|p|s|n]
 
